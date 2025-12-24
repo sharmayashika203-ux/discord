@@ -75,7 +75,10 @@ height: 70%;
     height: 60%;
     border-radius: 35%;
     font-size: larger;
-
+}
+.btn:hover{
+    background-color: rgba(14, 14, 15, 0.677);
+    color: #ffffff;
 }
 .home1{
     height: 60vh;
@@ -125,6 +128,10 @@ height: 70%;
    font-size: x-large;
    color: black;
 }
+.btn1:hover{
+    background-color: rgba(14, 14, 15, 0.677);
+    color: #ffffff;
+}
 .btn2{
     position: absolute;
     height: 50px;
@@ -135,6 +142,10 @@ height: 70%;
    font-size: x-large;
    background-color: #1224e2;
    color: #ffffff;
+}
+.btn2:hover{
+    background-color: rgba(246, 246, 252, 0.677);
+    color: #090101;
 }
 .robo{
     height: 8%;
@@ -315,4 +326,140 @@ video{
     100%{
         transform: translateY(0px);
     }
+}
+/* =========================
+   MOBILE RESPONSIVE (≤768px)
+========================= */
+
+@media (max-width: 768px) {
+
+  /* Wrapper */
+  .wrapper {
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .section a {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* HOME SECTION */
+  .home1 {
+    flex-direction: column;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .heading1 {
+    position: static;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .body-text1 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .maindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .computer {
+    width: 90%;
+    height: auto;
+  }
+
+  .man {
+    position: absolute;
+    height: 120px;
+    margin-top: 60%;
+    margin-left: -20%;
+  }
+
+  /* BUTTONS */
+  .btn1,
+  .btn2 {
+    position: static;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+  }
+
+  /* DECOR IMAGES */
+  .robo,
+  .pan,
+  .egg,
+  .coin {
+    height: 60px;
+  }
+
+  /* CONTENT SECTIONS */
+  .main,
+  .main2,
+  .main3 {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  .heading2,
+  .heading3,
+  .heading4 {
+    position: static;
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0 10px;
+  }
+
+  .body-text2,
+  .body-text3,
+  .body-text4 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
 }
